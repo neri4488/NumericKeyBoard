@@ -7,63 +7,10 @@
     tools:context=".Nk_board"
     android:baselineAligned="false">
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_weight="1.4"
-        android:gravity="center"
-        android:orientation="vertical">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/ic_launcher"
-            android:contentDescription="@string/logo" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_marginTop="25dp"
-            android:orientation="horizontal">
-
-            <EditText
-                android:id="@+id/passcode1"
-                style="@style/PasscodeEditText"
-                android:hint="@string/digit_one" />
-
-            <EditText
-                android:id="@+id/passcode2"
-                style="@style/PasscodeEditText"
-                android:hint="@string/digit_two" />
-
-            <EditText
-                android:id="@+id/passcode3"
-                android:hint="@string/digit_three"
-                style="@style/PasscodeEditText" />
-
-            <EditText
-                android:id="@+id/passcode4"
-                android:hint="@string/digit_four"
-                style="@style/PasscodeEditText" />
-
-        </LinearLayout>
-
-
-        <TextView
-            android:id="@+id/passcode_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/label_passcode"
-            android:textSize="15sp" />
-
-    </LinearLayout>
-
     <TableLayout
-        android:layout_width="fill_parent"
+        android:layout_width="0dp"
         android:layout_height="fill_parent"
-        android:layout_weight="0.6"
+        android:layout_weight="1.6"
         android:gravity="center">
 
         <TableRow
@@ -301,11 +248,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center">
-            <View
+
+            <ImageButton
                 android:layout_width="@dimen/passcode_btn"
                 android:layout_height="@dimen/passcode_btn"
                 android:layout_margin="@dimen/passcode_btn_margin"
-                android:visibility="invisible"/>
+                android:src="@mipmap/ic_ok"
+                android:hapticFeedbackEnabled="true"
+                android:id="@+id/ok_btn"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/ok" />
 
             <LinearLayout
                 android:layout_width="@dimen/passcode_btn"

@@ -20,6 +20,7 @@ public class Nk_board extends Fragment {
     public interface OnKeyBoard {
         void onOnDeletePressed(View v);
         void onKeyPressed(int value);
+        void onOkPressed(View v);
     }
 
     private OnKeyBoard listener;
@@ -93,6 +94,13 @@ public class Nk_board extends Fragment {
             @Override
             public void onClick(View v) {
                 listener.onOnDeletePressed(v);
+            }
+        });
+
+        rootView.findViewById(R.id.ok_btn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                listener.onOkPressed(view);
             }
         });
 
