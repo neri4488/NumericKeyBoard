@@ -1,15 +1,12 @@
 package com.hamsoftug.numerickeyboard;
 
 
-import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 
 /**
@@ -33,61 +30,61 @@ public class Nk_board extends Fragment {
         rootView.findViewById(R.id.one_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                add("1");
+                takeValue("1");
             }
         });
         rootView.findViewById(R.id.two_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                add("2");
+                takeValue("2");
             }
         });
         rootView.findViewById(R.id.three_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                add("3");
+                takeValue("3");
             }
         });
         rootView.findViewById(R.id.four_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                add("4");
+                takeValue("4");
             }
         });
         rootView.findViewById(R.id.five_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                add("5");
+                takeValue("5");
             }
         });
         rootView.findViewById(R.id.six_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                add("6");
+                takeValue("6");
             }
         });
         rootView.findViewById(R.id.seven_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                add("7");
+                takeValue("7");
             }
         });
         rootView.findViewById(R.id.eight_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                add("8");
+                takeValue("8");
             }
         });
         rootView.findViewById(R.id.nine_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                add("9");
+                takeValue("9");
             }
         });
         rootView.findViewById(R.id.zero_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                add("0");
+                takeValue("0");
             }
         });
         rootView.findViewById(R.id.delete_btn).setOnClickListener(new View.OnClickListener() {
@@ -120,7 +117,7 @@ public class Nk_board extends Fragment {
 
     }
 
-    private void add(String num) {
+    private void takeValue(String num) {
         listener.onKeyPressed(Integer.parseInt(num));
     }
 
