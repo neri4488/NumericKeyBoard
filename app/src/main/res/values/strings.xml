@@ -25,5 +25,7 @@
     <string name="digit_zero">0</string>
     <string name="digit_zero_text">+</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="clear">Clear</string>
+    <string name="logo">logo</string>
 
 </resources>
